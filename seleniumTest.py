@@ -17,7 +17,7 @@ driver.get("http://www.electricistas24horasbogota.com/contactenos")
 #lucky_button = driver.find_element_by_css_selector("[name=btnI]")
 nameField = driver.find_element_by_id("page93_inputsinglevalue1_inputsinglevalue1")
 nameField.clear()
-nameField.send_keys("Julian")
+nameField.send_keys("Rafico")
 
 phoneField = driver.find_element_by_id("page93_inputsinglevalue2_phone")
 phoneField.clear()
