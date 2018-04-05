@@ -106,5 +106,5 @@ def expertoYa(name,phone,email,desc,dir,now,date,time):
  print(driver.title)
  # capture the screen
  driver.get_screenshot_as_file("captureExpertoYa.png")
-electricistas24Horas("Daniela","3213680874","t.kavanagh@uniandes.edu.co","Necesito que arrglen a mi perro aaaaaaaaaaaaaaaaaaaaaa xp")
-expertoYa("Daniela","3213680874","t.kavanagh@uniandes.edu.co","necesito un cerrajero ","cll 34sur#51-22",1,"9 Mayo 2018","20")
+electricistas24Horas("Ricardo","3000000000","t.kavanagh@uniandes.edu.co","Necesito que arrglen a mi perro aaaaaaaaaaaaaaaaaaaaaa xp")
+expertoYa("Ricardo","3000000000","t.kavanagh@uniandes.edu.co","necesito un cerrajero ","cll 34sur#51-22",1,"9 Mayo 2018","20")
