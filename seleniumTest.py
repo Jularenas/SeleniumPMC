@@ -48,7 +48,7 @@ def electricistas24Horas(name,phone,email,desc):
 def expertoYa(name,phone,email,desc,dir,now,date,time):
  print("ENTRE AL METODO") 
   
- driver.get("https://www.expertoya.com/")
+ driver.get("https://www.expertoya.com")
  print("ENTRE A EXPERTOYA")
  print(driver.title)
  #lucky_button = driver.find_element_by_css_selector("[name=btnI]")
@@ -90,13 +90,15 @@ def expertoYa(name,phone,email,desc,dir,now,date,time):
  terms= driver.find_element_by_id("edit-legal-accept")
  submit=driver.find_element_by_id("edit-submit")
  
+ driver.get_screenshot_as_file("captureExpertoYaSinEnviar.png")
+ 
  print("-------------")
  print("-------------")
  terms.click()
  submit.click()
  print(driver.title)
  element2 = driver.find_element_by_id("main-content")
- element3=element2.find_element_by_id("block-views-user-listing-block-2")
+ #element3=element2.find_element_by_id("block-views-user-listing-block-2")
  print (element2.get_attribute('innerHTML'))
 
 # element2.find_element_by_xpath(".//span[@class='tecnico_ya']").getText() 
@@ -190,5 +192,5 @@ def expertoYa(name,phone,email,desc,dir,now,date,time):
     # else:
         # return False
 electricistas24Horas("Ricardo","3000000000","t.kavanagh@uniandes.edu.co","Necesito que arrglen a mi perro aaaaaaaaaaaaaaaaaaaaaa xp")
-expertoYa("Ricardo","3000000000","t.kavanagh@uniandes.edu.co","necesito un cerrajero ","cll 34sur#51-22",1,"9 Mayo 2018","20")
+expertoYa("Jairo","3000000000","jularenas11@gmail.com","necesito un cerrajero ","cll 66#32-21",1,"10 Mayo 2018","20")
 #doctorSolucion("Ricardo","3142352865","305717646","jularenas@gmail.com","envio de prueba","Bogotá","Bogotá","BOCHICA")
